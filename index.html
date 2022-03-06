@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/style.css"
+      media="screen"
+    />
+    <title>Formulário de Pesquisa</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="titulo">Meus gostos</h1>
+      <p id="subtitulo">Complete com as suas preferências</p>
+      <br />
+    </div>
+
+    <form>
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome"><strong>Nome:</strong></label>
+          <input type="text" name="Nome" id="nome" required />
+        </div>
+
+        <div class="campo">
+          <label for="sobrenome"><strong>Sobrenome:</strong></label>
+          <input type="text" name="Sobrenome" id="sobrenome" required />
+        </div>
+
+        <div class="campo">
+          <label for="email"><strong>E-mail:</strong></label>
+          <input type="email" name="email" id="email" required />
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <label for="estacao"
+          ><strong>Minha estação favorita do ano é:</strong>
+        </label>
+        <select id="estacao" required>
+          <option selected disabled value="">Selecione</option>
+          <option>Primavera</option>
+          <option>Verão</option>
+          <option>Outono</option>
+          <option>Inverno</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label><strong>Meu gênero preferido para filme é:</strong> </label>
+        <label>
+          <input type="radio" name="genero" value="acao" checked />Ação
+        </label>
+        <label>
+          <input type="radio" name="genero" value="aventura" />Aventura
+        </label>
+        <label>
+          <input type="radio" name="genero" value="comedia" />Comédia
+        </label>
+        <label>
+          <input type="radio" name="genero" value="romcom" />Comédia Romântica
+        </label>
+        <label>
+          <input type="radio" name="genero" value="doc" />Documentário</label
+        >
+        <label> <input type="radio" name="genero" value="drama" />Drama </label>
+        <label>
+          <input type="radio" name="genero" value="fantas" />Fantasia
+        </label>
+        <label>
+          <input type="radio" name="genero" value="ficient" />Ficção Científica
+        </label>
+        <label>
+          <input type="radio" name="genero" value="polic" />Policial
+        </label>
+        <label>
+          <input type="radio" name="genero" value="musica" />Musical
+        </label>
+        <label>
+          <input type="radio" name="genero" value="romance" />Romance
+        </label>
+        <label>
+          <input type="radio" name="genero" value="suspense" />Suspense
+        </label>
+        <label>
+          <input type="radio" name="genero" value="terror" />Terror
+        </label>
+      </div>
+
+      <fieldset class="grupo">
+        <div id="check">
+          <label
+            ><strong>Os gêneros musicais que eu mais curto são:</strong></label
+          ><br /><br />
+          <input type="checkbox" id="genero1" name="genero1" value="axe" />
+          <label for="genero1">Axé</label>
+          <input type="checkbox" id="genero2" name="genero2" value="blues" />
+          <label for="genero2">Blues</label>
+          <input type="checkbox" id="genero3" name="genero3" value="country" />
+          <label for="genero3">Country</label>
+          <input type="checkbox" id="genero4" name="genero4" value="eletro" />
+          <label for="genero4">Eletrônica</label>
+          <input type="checkbox" id="genero5" name="genero5" value="forro" />
+          <label for="genero5">Forró</label>
+          <input type="checkbox" id="genero6" name="genero6" value="funk" />
+          <label for="genero6">Funk</label>
+          <input type="checkbox" id="genero7" name="genero7" value="gospel" />
+          <label for="genero7">Gospel</label>
+          <input type="checkbox" id="genero8" name="genero8" value="hiphop" />
+          <label for="genero8">Hip-Hop</label>
+          <input type="checkbox" id="genero9" name="genero9" value="jazz" />
+          <label for="genero9">Jazz</label>
+          <input type="checkbox" id="genero10" name="genero10" value="kpop" />
+          <label for="genero10">K-pop</label>
+          <input type="checkbox" id="genero11" name="genero11" value="mpb" />
+          <label for="genero11">MPB</label>
+          <input type="checkbox" id="genero12" name="genero12" value="clssic" />
+          <label for="genero12">Música Clássica</label>
+          <input type="checkbox" id="genero13" name="genero13" value="pagode" />
+          <label for="genero13">Pagode</label>
+          <input type="checkbox" id="genero14" name="genero14" value="pop" />
+          <label for="genero14">Pop</label>
+          <input type="checkbox" id="genero15" name="genero15" value="rap" />
+          <label for="genero15">Rap</label>
+          <input type="checkbox" id="genero16" name="genero16" value="reggae" />
+          <label for="genero16">Reggae</label>
+          <input type="checkbox" id="genero17" name="genero17" value="rock" />
+          <label for="genero17">Rock</label>
+          <input type="checkbox" id="genero18" name="genero18" value="samba" />
+          <label for="genero18">Samba</label>
+          <input type="checkbox" id="genero19" name="genero19" value="sertan" />
+          <label for="genero19">Sertanejo</label>
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <br />
+        <label for="hobbie"
+          ><strong
+            >Se você pudesse escolher algo que gosta (ex.: um hobbie) para fazer
+            para o resto da sua vida o que seria? E por que?</strong
+          > </label
+        ><br />
+        <textarea rows="6" style="width: 26em" id="exp" name="exp"></textarea>
+      </div>
+
+      <button class="botao" type="submit" onsubmit="">Concluído</button>
+    </form>
+  </body>
+</html>
